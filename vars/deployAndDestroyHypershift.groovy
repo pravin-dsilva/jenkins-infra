@@ -7,6 +7,7 @@ def call(){
             // Run the script for deploying hypershift
             sh '''
                 TAG="ppc64le"
+                arch
                 rm -rf /usr/local/go
                 wget https://go.dev/dl/go1.18.8.darwin-amd64.tar.gz
                 tar -C /usr/local -xzf go1.18.8.darwin-amd64.tar.gz
