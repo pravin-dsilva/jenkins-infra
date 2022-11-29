@@ -31,13 +31,6 @@ pipeline {
         stage('Setup Common Environment Variables') {
             steps {
                 setupCommonEnvironmentVariables()
-                setupClusterConfig("${CONFIG_TYPE}")
-            }
-        }
-
-        stage('Initialize Environment') {
-            steps {
-                initializeEnvironment()
             }
         }
 
