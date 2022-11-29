@@ -28,11 +28,6 @@ pipeline {
                 cloneRepo("https://github.com/pravin-dsilva/ocp4-playbooks-extras-1", "ocp4-playbooks-extras", "*/hypershift-jenkins")
             }
         }
-        stage('Setup Common Environment Variables') {
-            steps {
-                setupCommonEnvironmentVariables()
-            }
-        }
 
         stage('Install Hypershift') {
             steps {
