@@ -1,4 +1,4 @@
-@Library('jenkins-upstream-library') _
+@Library('pravin-library') _
 
 pipeline {
     agent {
@@ -28,7 +28,6 @@ pipeline {
                 cloneRepo("https://github.com/pravin-dsilva/ocp4-playbooks-extras-1", "ocp4-playbooks-extras", "*/hypershift-jenkins")
             }
         }
-
         stage('Install Hypershift') {
             steps {
                 deployAndDestroyHypershift()
