@@ -16,5 +16,9 @@ def call(){
                 echo $SERVICE_INSTANCE_ID
             '''
         }
+        catch (err){
+            env.FAILED_STAGE=env.STAGE_NAME
+            throw err
+        }
     }
 }
