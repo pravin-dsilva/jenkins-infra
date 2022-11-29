@@ -25,7 +25,7 @@ pipeline {
     stages {
         stage('Clone ansible extra') {
             steps {
-                cloneRepo("https://github.com/pravin-dsilva/ocp4-playbooks-extras-1", "ocp4-playbooks-extras", "*/hypershift")
+                cloneRepo("https://github.com/pravin-dsilva/ocp4-playbooks-extras-1", "ocp4-playbooks-extras", "*/hypershift-jenkins")
             }
         }
         stage('Setup Common Environment Variables') {
