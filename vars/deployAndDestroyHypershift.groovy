@@ -9,8 +9,8 @@ def call(){
                 TAG="ppc64le"
                 arch
                 rm -rf /usr/local/go
-                wget https://go.dev/dl/go1.18.8.darwin-amd64.tar.gz
-                tar -C /usr/local -xzf go1.18.8.darwin-amd64.tar.gz
+                wget https://go.dev/dl/go1.18.8.linux-amd64.tar.gz
+                tar -C /usr/local -xzf go1.18.8.linux-amd64.tar.gz
                 export PATH=/usr/local/go/bin:$PATH
                 go version
                 cd ocp4-playbooks-extras
