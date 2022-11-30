@@ -17,6 +17,7 @@ def call(){
                 export PATH=/usr/local/go/bin:$PATH
                 go version
                 cd ocp4-playbooks-extras
+                cp examples/inventory inventory
                 cp examples/hypershift_install.yaml vars.yaml
                 sed -i "s|powervs_region:.*$|powervs_region: $POWERVS_REGION |g" vars.yaml
                 sed -i "s|powervs_zone:.*$|powervs_zone: $POWERVS_ZONE|g" vars.yaml
