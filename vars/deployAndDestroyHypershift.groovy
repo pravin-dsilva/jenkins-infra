@@ -10,7 +10,8 @@ def call(){
                 arch
                 rm -rf /usr/local/go
                 export IBMCLOUD_API_KEY=$IBMCLOUD_API_KEY
-                echo $PULL_SECRET > ~/.pullSecret
+                PULL_SECRET_FILE=~/.pullSecret
+                pullSecret()
                 wget https://go.dev/dl/go1.18.8.linux-amd64.tar.gz
                 tar -C /usr/local -xzf go1.18.8.linux-amd64.tar.gz
                 export PATH=/usr/local/go/bin:$PATH
