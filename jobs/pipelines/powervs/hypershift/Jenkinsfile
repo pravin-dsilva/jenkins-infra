@@ -17,9 +17,12 @@ pipeline {
         REDHAT_PASSWORD = credentials('REDHAT_PASSWORD')
         PULL_SECRET = credentials('PULL_SECRET')
 
-        IBM_CLOUD_REGION = "tor"
-        IBM_CLOUD_ZONE = "tor01"
-        SERVICE_INSTANCE_ID = "54903e51-c4d2-42be-bfa1-d31c708ddf31"
+        POWERVS_REGION = "osa"
+        POWERVS_ZONE = "osa21"
+        VPC_REGION = "jp-osa"
+        IBMCLOUD_RESOURCE_GROUP = "ipi-resource-group"
+        OCP_RELEASE_IMAGE = "quay.io/openshift-release-dev/ocp-release:4.12.0-rc.2-multi"
+        
 	 }
 
     stages {
